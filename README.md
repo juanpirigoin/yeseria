@@ -1,16 +1,42 @@
-# React + Vite
+# Yesería Artística
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Sitio web de una tienda artesanal de yesería, con secciones de restauración, productos, kits y esculturas.
 
-Currently, two official plugins are available:
+## Ejecutar localmente
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+La app quedará disponible en el puerto de Vite normalmente en:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+http://localhost:5173
+```
 
-## Expanding the Oxlint configuration
+## Compilar para producción
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```bash
+npm run build
+```
+
+La salida se genera en la carpeta docs, que está preparada para publicarse en GitHub Pages.
+
+## Publicar en GitHub Pages
+
+Este proyecto ya viene configurado para desplegar automáticamente desde GitHub Actions usando la carpeta docs.
+
+Pasos:
+
+1. Sube el proyecto a un repositorio de GitHub.
+2. Asegúrate de que la rama principal del repositorio se llama `main`.
+3. En GitHub, entra a Settings > Pages.
+4. En Source, selecciona "GitHub Actions".
+5. Haz push a `main` y la acción se ejecutará automáticamente.
+
+También queda listo un workflow en [.github/workflows/deploy.yml](.github/workflows/deploy.yml).
+
+## Nota importante
+
+La aplicación usa `HashRouter`, por lo que las rutas internas funcionan bien cuando se sirve desde GitHub Pages sin necesidad de configuración extra de rewrites del servidor.
