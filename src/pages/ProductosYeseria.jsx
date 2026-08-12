@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ProductCard from '../components/ProductCard';
-import molduraImg from '../docs\images\moldura_1.png';
+import molduraImg from '../docs/images/moldura_1.png';
 
 const ProductosYeseria = () => {
   const [activeFilter, setActiveFilter] = useState('Todos');
