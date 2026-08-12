@@ -90,7 +90,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="features-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))' }}>
+          <div className="features-grid category-grid">
             <div className="feature-card" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
               <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.5rem', marginBottom: '0.8rem' }}>Molduras y Decoración</h3>
               <p style={{ flexGrow: 1, marginBottom: '1.5rem' }}>
@@ -126,7 +126,7 @@ const Home = () => {
 
       {/* Workshop Narrative */}
       <section className="section" style={{ paddingBottom: '2rem' }}>
-        <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
+        <div className="container split-section home-story">
           <div>
             <span className="section-tag" style={{ textAlign: 'left' }}>El Taller</span>
             <h2 className="section-title" style={{ textAlign: 'left', marginBottom: '1.5rem' }}>Artesanos del yeso con historia</h2>

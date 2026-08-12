@@ -51,7 +51,7 @@ const Esculturas = () => {
 
       <section className="section" style={{ paddingTop: '0' }}>
         <div className="container">
-          <div className="product-grid" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))' }}>
+          <div className="product-grid sculpture-grid">
             {esculturas.map((escultura) => (
               <ProductCard key={escultura.id} product={escultura} />
             ))}

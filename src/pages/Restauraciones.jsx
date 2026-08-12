@@ -52,7 +52,7 @@ const Restauraciones = () => {
 
       {/* Intro Narrative */}
       <section className="section" style={{ paddingTop: '0' }}>
-        <div className="container" style={{ display: 'grid', gridTemplateColumns: '1.2fr 0.8fr', gap: '4rem', alignItems: 'center' }}>
+        <div className="container split-section restoration-intro">
           <div>
             <h2 style={{ fontSize: '2rem', color: 'var(--color-primary-dark)', marginBottom: '1.5rem' }}>
               El arte de sanar la ornamentación histórica
@@ -63,7 +63,7 @@ const Restauraciones = () => {
             <p style={{ color: 'var(--color-text-muted)', marginBottom: '1.5rem' }}>
               Para cada proyecto realizamos un análisis del estado de conservación, removiendo agregados modernos nocivos y rescatando molduras a través de la toma de moldes de silicona de alta fidelidad directamente sobre los relieves originales sanos.
             </p>
-            <div style={{ display: 'flex', gap: '2rem', marginTop: '2rem' }}>
+            <div style={{ display: 'flex', gap: '2rem', marginTop: '2rem', flexWrap: 'wrap' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                 <Shield size={20} style={{ color: 'var(--color-primary)' }} />
                 <span style={{ fontWeight: '500' }}>Técnicas Reversibles</span>
